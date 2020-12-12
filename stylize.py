@@ -33,8 +33,8 @@ parser.add_argument('--style-size', type=int, default=512,
                     help='New (minimum) size for the style image, \
                     keeping the original size if set to 0')
 parser.add_argument('--crop', type=int, default=0,
-                    help='If != 0, center crop of this size will be applied to the content image \ 
-                    after resizing to create a squared image (default: 0)')
+                    help='If != 0, center crop  applied to content image, \ 
+                    after resizing to create a squared image default: 0')
 
 # random.seed(131213)
 

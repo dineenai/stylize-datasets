@@ -101,13 +101,14 @@ def main():
     vgg.eval()
 
     
-    print(torch.__version__)
+    #print(torch.__version__)
 
-    checkpoint = torch.load('models/decoder.pth')
-    print(checkpoint.keys())
+    #checkpoint = torch.load('models/decoder.pth')
+    #print(checkpoint.keys())
 
     #decoder.load_state_dict(torch.load('models/decoder.pth.tar'))
-    decoder.load_state_dict(torch.load('models/decoder.pth.tar')['model_state_dict'])
+    #decoder.load_state_dict(torch.load('models/decoder.pth.tar')['model_state_dict'])
+    decoder.load_state_dict(torch.load('models/decoder.pth'))
     vgg.load_state_dict(torch.load('models/vgg_normalised.pth'))
     vgg = nn.Sequential(*list(vgg.children())[:31])
 

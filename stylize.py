@@ -108,7 +108,8 @@ def main():
 
     #decoder.load_state_dict(torch.load('models/decoder.pth.tar'))
     #decoder.load_state_dict(torch.load('models/decoder.pth.tar')['model_state_dict'])
-    decoder.load_state_dict(torch.load('models/decoder.pth'))
+    decoder.load_state_dict(torch.load('models/decoder.pth')['model_state_dict'])
+    #decoder.load_state_dict(torch.load('models/decoder.pth'))
     vgg.load_state_dict(torch.load('models/vgg_normalised.pth'))
     vgg = nn.Sequential(*list(vgg.children())[:31])
 

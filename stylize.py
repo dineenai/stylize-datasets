@@ -57,6 +57,9 @@ def style_transfer(vgg, decoder, content, style, alpha=1.0):
 
 def main():
     args = parser.parse_args()
+    
+    args = parser.parse_args()
+    print(args.style_dir)
 
     # set content and style directories
     content_dir = Path(args.content_dir)

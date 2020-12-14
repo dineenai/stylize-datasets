@@ -100,7 +100,7 @@ def main():
     decoder.eval()
     vgg.eval()
 
-    checkpoint = torch.load('models/decoder.pth.tar')
+    checkpoint = torch.load('models/decoder.pth')
     print(checkpoint.keys())
 
     #decoder.load_state_dict(torch.load('models/decoder.pth.tar'))

@@ -100,6 +100,9 @@ def main():
     decoder.eval()
     vgg.eval()
 
+    
+    print(torch.__version__)
+
     checkpoint = torch.load('models/decoder.pth')
     print(checkpoint.keys())
 

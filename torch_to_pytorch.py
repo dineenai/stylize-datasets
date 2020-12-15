@@ -6,7 +6,8 @@ from functools import reduce
 import torch
 import torch.nn as nn
 from torch.autograd import Variable
-from torch.utils.serialization import load_lua
+#from torch.utils.serialization import load_lua
+import torchfile
 
 
 class LambdaBase(nn.Sequential):

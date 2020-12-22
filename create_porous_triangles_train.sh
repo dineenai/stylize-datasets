@@ -1,5 +1,7 @@
 #!/bin/bash
 #
+#SBATCH --gres=gpu:2
+#SBATCH --cpus-per-task=12
 #SBATCH -J blurry_style_transfer_dtd_porous_geometric_shapes_triangles
 #SBATCH --output=/home/ainedineen/blurry_vision/stylize-datasets/style_transfer_dtd_geometric_shapes/porous_train_triangles/logs/slurm-%j.out
 #SBATCH --error=/home/ainedineen/blurry_vision/stylize-datasets/style_transfer_dtd_geometric_shapes/porous_train_triangles/logs/slurm-%j.err
